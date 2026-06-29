@@ -8,6 +8,8 @@
     <meta name="description" content="Portfolio of Ryan Shoyab Shaikh - 18-year-old AI Systems Builder, SaaS Developer & Founder from Panipat, India. Building cutting-edge automations, business websites, and dashboards.">
     <meta name="keywords" content="Ryan Shoyab Shaikh, AI Systems Builder, SaaS Developer, Panipat, Automation Expert, Portfolio, Web Developer">
     <meta name="author" content="Ryan Shoyab Shaikh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ryanshoyab.in/">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2650,6 +2652,298 @@
         .delay-400 { transition-delay: 400ms; }
         .delay-500 { transition-delay: 500ms; }
 
+        /* ==========================================
+           15. LAB & EXPERIMENTS SECTION (Cream Grid Theme)
+           ========================================== */
+        #lab {
+            background-color: var(--bg-cream);
+            padding: 100px 0;
+            border-top: 3px solid #0A0A0A;
+            position: relative;
+            z-index: 2;
+        }
+
+        .lab-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Search & Filter Controls */
+        .lab-controls-container {
+            background: #FFFFFF;
+            border: 3px solid #0A0A0A;
+            box-shadow: 8px 8px 0px #0A0A0A;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .lab-search-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+        }
+
+        .lab-search-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .lab-search-input-wrapper i {
+            position: absolute;
+            left: 20px;
+            font-size: 1.2rem;
+            color: #666;
+            pointer-events: none;
+        }
+
+        .lab-search-input {
+            width: 100%;
+            padding: 16px 20px 16px 50px;
+            border: 2px solid #0A0A0A;
+            border-radius: 12px;
+            background: #FFFFFF;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            outline: none;
+            box-shadow: 3px 3px 0px #0A0A0A;
+            transition: all 0.2s ease;
+        }
+
+        .lab-search-input:focus {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px #0A0A0A;
+            background-color: #FFFFFA;
+        }
+
+        .lab-sort-select {
+            padding: 16px 25px;
+            border: 2px solid #0A0A0A;
+            border-radius: 12px;
+            background: #FFFFFF;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 700;
+            outline: none;
+            box-shadow: 3px 3px 0px #0A0A0A;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230A0A0A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 14px;
+            padding-right: 45px;
+        }
+
+        .lab-sort-select:focus {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px #0A0A0A;
+        }
+
+        .lab-filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .lab-filter-label {
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-right: 8px;
+        }
+
+        .btn-filter-tag {
+            padding: 8px 18px;
+            background: #FFFFFF;
+            border: 2px solid #0A0A0A;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            box-shadow: 2px 2px 0px #0A0A0A;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-filter-tag:hover, .btn-filter-tag.active {
+            background-color: var(--accent-yellow);
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0px #0A0A0A;
+        }
+
+        .btn-filter-tag.active {
+            background-color: var(--accent-purple);
+            color: #FFFFFF;
+        }
+
+        /* Lab Grid */
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .lab-card-neobrutalist {
+            background: #FFFFFF;
+            border: 3px solid #0A0A0A;
+            box-shadow: 8px 8px 0px #0A0A0A;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+        }
+
+        .lab-card-neobrutalist:hover {
+            transform: translate(-6px, -6px);
+            box-shadow: 14px 14px 0px #0A0A0A;
+        }
+
+        .lab-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .lab-card-meta-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .lab-card-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--bg-pink);
+            border: 1.5px solid #0A0A0A;
+            color: #0A0A0A;
+        }
+
+        .lab-card-date {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .lab-card-views {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-purple);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lab-card-title {
+            font-family: var(--font-playful-alt);
+            font-size: 1.45rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+
+        .lab-card-excerpt {
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .lab-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            padding-top: 20px;
+        }
+
+        .lab-read-time {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #888;
+        }
+
+        .lab-link-btn {
+            font-family: var(--font-body);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s ease;
+        }
+
+        .lab-link-btn:hover {
+            color: var(--accent-purple);
+            gap: 10px;
+        }
+
+        /* Empty Search State */
+        .lab-empty-state {
+            grid-column: span 2;
+            text-align: center;
+            padding: 60px 20px;
+            background: #FFFFFF;
+            border: 3px solid #0A0A0A;
+            border-radius: 20px;
+            box-shadow: 4px 4px 0px #0A0A0A;
+            display: none;
+        }
+
+        .lab-empty-state i {
+            font-size: 3rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .lab-empty-state h3 {
+            font-family: var(--font-playful-alt);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .lab-empty-state p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 991px) {
+            .lab-grid {
+                grid-template-columns: 1fr;
+            }
+            .lab-search-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -2733,6 +3027,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#lab" class="nav-link">Lab</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="burger" id="burger-menu">
@@ -3282,6 +3577,123 @@
                             <p>Creative Director, MIACIA</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9.5 THE LAB & EXPERIMENTS -->
+    <section id="lab">
+        <div class="container">
+            <div class="lab-header reveal-element">
+                <span class="section-subtitle" style="color: var(--accent-purple);">TECHNICAL EXPERIMENTS & BLOGS</span>
+                <h2 class="display-title-playful" style="color: var(--text-dark);">THE LAB</h2>
+            </div>
+
+            <!-- Search & Filters Container -->
+            <div class="lab-controls-container reveal-element">
+                <div class="lab-search-row">
+                    <div class="lab-search-input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="lab-search" class="lab-search-input" placeholder="Search experiments, concepts, blogs...">
+                    </div>
+                    <select id="lab-sort" class="lab-sort-select" aria-label="Sort Content">
+                        <option value="latest">Sort by: Latest</option>
+                        <option value="views">Sort by: Popularity (Views)</option>
+                    </select>
+                </div>
+                <div class="lab-filter-row">
+                    <span class="lab-filter-label">Filter by:</span>
+                    <button class="btn-filter-tag active" data-filter="all">All</button>
+                    <button class="btn-filter-tag" data-filter="AI Systems">AI Systems</button>
+                    <button class="btn-filter-tag" data-filter="Automation">Automation</button>
+                    <button class="btn-filter-tag" data-filter="Robotics">Robotics</button>
+                </div>
+            </div>
+
+            <!-- Lab Cards Grid -->
+            <div class="lab-grid" id="lab-grid">
+                <!-- Experiment 1 -->
+                <div class="lab-card-neobrutalist reveal-element" data-category="AI Systems" data-date="2026-06-25" data-views="1420">
+                    <div class="lab-card-meta">
+                        <div class="lab-card-meta-left">
+                            <span class="lab-card-tag" style="background-color: var(--bg-pink);">AI Systems</span>
+                            <span class="lab-card-date">June 25, 2026</span>
+                        </div>
+                        <div class="lab-card-views">
+                            <i class="fa-solid fa-eye"></i> 1.4k views
+                        </div>
+                    </div>
+                    <h3 class="lab-card-title">Building Dinekaraye Go: The QR Code Restaurant Revolution</h3>
+                    <p class="lab-card-excerpt">How I built a lightweight, hardware-free QR dining system that digitizes local menus and runs AI upsell engines to accelerate restaurant revenue without overhead.</p>
+                    <div class="lab-card-footer">
+                        <span class="lab-read-time">5 min read</span>
+                        <a href="https://github.com/ryanshoyab/ryan-shoyab" target="_blank" class="lab-link-btn">Read Code <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experiment 2 -->
+                <div class="lab-card-neobrutalist reveal-element delay-100" data-category="Robotics" data-date="2026-06-28" data-views="980">
+                    <div class="lab-card-meta">
+                        <div class="lab-card-meta-left">
+                            <span class="lab-card-tag" style="background-color: var(--accent-yellow);">Robotics</span>
+                            <span class="lab-card-date">June 28, 2026</span>
+                        </div>
+                        <div class="lab-card-views">
+                            <i class="fa-solid fa-eye"></i> 980 views
+                        </div>
+                    </div>
+                    <h3 class="lab-card-title">Swarm Robotics and Kinematics Simulation in NEONIX</h3>
+                    <p class="lab-card-excerpt">Orchestrating cyber-physical swarm coordinates and low-latency diagnostic telemetry pipelines to sync multi-axis mechanical coordinate matrices.</p>
+                    <div class="lab-card-footer">
+                        <span class="lab-read-time">7 min read</span>
+                        <a href="https://github.com/ryanshoyab/ryan-shoyab" target="_blank" class="lab-link-btn">Read Code <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experiment 3 -->
+                <div class="lab-card-neobrutalist reveal-element delay-200" data-category="Automation" data-date="2026-06-20" data-views="750">
+                    <div class="lab-card-meta">
+                        <div class="lab-card-meta-left">
+                            <span class="lab-card-tag" style="background-color: var(--bg-pink);">Automation</span>
+                            <span class="lab-card-date">June 20, 2026</span>
+                        </div>
+                        <div class="lab-card-views">
+                            <i class="fa-solid fa-eye"></i> 750 views
+                        </div>
+                    </div>
+                    <h3 class="lab-card-title">Centralizing Multi-Channel Automations: LinkedIn, X, and Vercel Crons</h3>
+                    <p class="lab-card-excerpt">Creating a unified content syndication hub for generating weekly topic rationale and dispatching automated email reports from one dashboard.</p>
+                    <div class="lab-card-footer">
+                        <span class="lab-read-time">4 min read</span>
+                        <a href="https://github.com/ryanshoyab/ryan-shoyab" target="_blank" class="lab-link-btn">Read Code <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experiment 4 -->
+                <div class="lab-card-neobrutalist reveal-element delay-300" data-category="AI Systems" data-date="2026-06-15" data-views="610">
+                    <div class="lab-card-meta">
+                        <div class="lab-card-meta-left">
+                            <span class="lab-card-tag" style="background-color: var(--accent-yellow);">AI Systems</span>
+                            <span class="lab-card-date">June 15, 2026</span>
+                        </div>
+                        <div class="lab-card-views">
+                            <i class="fa-solid fa-eye"></i> 610 views
+                        </div>
+                    </div>
+                    <h3 class="lab-card-title">Lessons from Scaling AI Agent Orchestrations in legacy systems</h3>
+                    <p class="lab-card-excerpt">Moving from task-based integrations to full cognitive pipelines that synchronize infrastructure logs, CRM feeds, and project management states.</p>
+                    <div class="lab-card-footer">
+                        <span class="lab-read-time">6 min read</span>
+                        <a href="https://github.com/ryanshoyab/ryan-shoyab" target="_blank" class="lab-link-btn">Read Code <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Empty State -->
+                <div class="lab-empty-state" id="lab-empty-state">
+                    <i class="fa-solid fa-flask-bubble"></i>
+                    <h3>No experiments found</h3>
+                    <p>Try searching for different terms or selecting another filter category.</p>
                 </div>
             </div>
         </div>
@@ -3998,6 +4410,90 @@
                 }, 6000);
             }, 2000);
         };
+
+        /* ------------------------------------------
+           L. THE LAB: SEARCH, FILTER & SORTING MECHANICS
+           ------------------------------------------ */
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('lab-search');
+            const sortSelect = document.getElementById('lab-sort');
+            const filterTags = document.querySelectorAll('.btn-filter-tag');
+            const labGrid = document.getElementById('lab-grid');
+            const labCards = document.querySelectorAll('.lab-card-neobrutalist');
+            const emptyState = document.getElementById('lab-empty-state');
+
+            let currentCategory = 'all';
+            let searchQuery = '';
+
+            function updateLabGrid() {
+                let visibleCount = 0;
+
+                labCards.forEach(card => {
+                    const title = card.querySelector('.lab-card-title').innerText.toLowerCase();
+                    const excerpt = card.querySelector('.lab-card-excerpt').innerText.toLowerCase();
+                    const tag = card.getAttribute('data-category').toLowerCase();
+                    
+                    const matchesSearch = title.includes(searchQuery) || excerpt.includes(searchQuery);
+                    const matchesCategory = currentCategory === 'all' || tag === currentCategory;
+
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    if (emptyState) emptyState.style.display = 'block';
+                } else {
+                    if (emptyState) emptyState.style.display = 'none';
+                }
+            }
+
+            // Search trigger
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    searchQuery = e.target.value.toLowerCase().trim();
+                    updateLabGrid();
+                });
+            }
+
+            // Category filter trigger
+            filterTags.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterTags.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentCategory = btn.getAttribute('data-filter').toLowerCase();
+                    updateLabGrid();
+                });
+            });
+
+            // Sorting logic
+            if (sortSelect && labGrid) {
+                sortSelect.addEventListener('change', () => {
+                    const sortBy = sortSelect.value; // 'latest' or 'views'
+                    const cardsArray = Array.from(labCards);
+
+                    cardsArray.sort((a, b) => {
+                        if (sortBy === 'latest') {
+                            const dateA = new Date(a.getAttribute('data-date'));
+                            const dateB = new Date(b.getAttribute('data-date'));
+                            return dateB - dateA; // descending
+                        } else {
+                            const viewsA = parseInt(a.getAttribute('data-views'));
+                            const viewsB = parseInt(b.getAttribute('data-views'));
+                            return viewsB - viewsA; // descending
+                        }
+                    });
+
+                    // Re-append items to grid
+                    cardsArray.forEach(card => {
+                        labGrid.appendChild(card);
+                    });
+                });
+            }
+        });
     </script>
 </body>
 </html>
