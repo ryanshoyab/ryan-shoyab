@@ -36,7 +36,7 @@ body_idx = html.find("<body>")
 head_content = html[head_idx:body_idx].strip()
 
 # Clean up style block from head template
-head_content_cleaned = re.sub(r"<style[^>]*>.*?</style>", '<link rel="stylesheet" href="index.css">', head_content, flags=re.DOTALL)
+head_content_cleaned = re.sub(r"<style[^>]*>.*?</style>", '<link rel="stylesheet" href="index.css?v=1.1">', head_content, flags=re.DOTALL)
 
 body_prefix = """<!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,7 @@ back_to_top = """    <!-- Back to Top Button -->
 
 footer_suffix = """
     <!-- Shared Script -->
-    <script src="index.js" defer></script>
+    <script src="index.js?v=1.1" defer></script>
 </body>
 </html>
 """
@@ -93,7 +93,7 @@ def make_page(body_content, title_tag=None, is_sub=False, canonical_url="https:/
     prefix = prefix.replace('href="https://ryanshoyab.in/"', f'href="{canonical_url}"')
     
     if is_sub:
-        prefix = prefix.replace('href="index.css"', 'href="../index.css"')
+        prefix = prefix.replace('href="index.css?v=1.1"', 'href="../index.css?v=1.1"')
         body_content = body_content.replace('src="ASSETS/', 'src="../ASSETS/')
         
         # Resolve navbar links for subpage
@@ -114,7 +114,7 @@ def make_page(body_content, title_tag=None, is_sub=False, canonical_url="https:/
                                       .replace('href="#resources"', 'href="../resources.html"')
         floating_whatsapp_resolved = floating_whatsapp.replace('href="#', 'href="../#')
         
-        suffix = footer_suffix.replace('src="index.js"', 'src="../index.js"')
+        suffix = footer_suffix.replace('src="index.js?v=1.1"', 'src="../index.js?v=1.1"')
         
         return prefix + "\n    " + noise_html + "\n    " + cursor_html.replace('src="ASSETS/', 'src="../ASSETS/') + "\n    " + nav_resolved + "\n\n" + body_content + "\n\n    " + contact_resolved + "\n\n    " + footer_resolved + "\n    " + floating_whatsapp_resolved + "\n" + back_to_top + suffix
     else:
