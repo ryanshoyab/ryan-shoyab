@@ -297,9 +297,12 @@ for p in prompts:
 
     card_html = f"""
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#{p["id"]}</span>
-            <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">{p["category"]}</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#{p["id"]}</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">{p["category"]}</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
         </div>
         {img_tag}
         <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">{p["title"]}</h3>
@@ -372,9 +375,12 @@ for p in prompts:
             </div>
             
             <div style="max-width: 800px; margin: 0 auto; background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 40px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
-                    <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#{p["id"]}</span>
-                    <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">{p["category"]}</span>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap: 10px;">
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#{p["id"]}</span>
+                        <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">{p["category"]}</span>
+                    </div>
+                    <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">Created &amp; Curated by Ryan Shoyab</span>
                 </div>
                 
                 <h1 style="font-family: var(--font-playful-alt); font-size: 2rem; font-weight: 700; line-height: 1.3; text-transform: uppercase; color: var(--text-dark); margin-bottom: 25px; border-bottom: 3px solid #0A0A0A; padding-bottom: 15px;">{p["title"]}</h1>

@@ -207,25 +207,35 @@
             <div class="resources-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px;">
                 
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#001</span>
-            <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#001</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
         </div>
         <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/001.jpg" alt="Neobrutalist UI/UX Code Generator Prompt" style="width: 100%; height: 100%; object-fit: cover;"></div>
         <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Neobrutalist UI/UX Code Generator Prompt</h3>
         <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
-            You are an expert frontend developer specializing in Neobrutalist web design.
-Generate responsive, high-performance HTML and inline CSS code for...
+            Act as a Senior Frontend Engineer. Build a high-converting single-page landing page featuring a bold Neobrutalist design language. 
+
+DESIGN SPECS...
         </p>
         
-        <textarea id="prompt-text-001" style="display: none;">You are an expert frontend developer specializing in Neobrutalist web design.
-Generate responsive, high-performance HTML and inline CSS code for a layout based on these parameters:
-- Core Colors: Light cream backgrounds (#F5F4F0), vibrant yellow buttons (#FFE500), deep black borders (#0A0A0A).
-- Border styles: Thick, solid borders (3px solid #0A0A0A) and sharp hard drop-shadows (8px 8px 0px #0A0A0A).
-- Typography: Inter or Space Grotesk for body, Anton for headings.
-- Mobile Layout: Strict single-column stack, all components must wrap perfectly without causing horizontal overflow.
+        <textarea id="prompt-text-001" style="display: none;">Act as a Senior Frontend Engineer. Build a high-converting single-page landing page featuring a bold Neobrutalist design language. 
 
-Provide clean, valid markup containing no external frameworks except FontAwesome icons.</textarea>
+DESIGN SPECS:
+- Base Background: #F5F4F0 (Warm Cream)
+- Card Accents: #FFE500 (Vibrant Yellow) and #FFC2E2 (Pastel Pink)
+- Typography: Use Google Fonts 'Anton' for Display headings and 'Space Grotesk' for body copy.
+- Borders: All elements (cards, headers, buttons) must have a thick '4px solid #0A0A0A' border.
+- Shadows: Flat hard drop-shadows 'box-shadow: 8px 8px 0px #0A0A0A' that translate on hover to '12px 12px 0px #0A0A0A'.
+
+SECTIONS:
+1. Nav: Header logo left, Nav links center, CTA button right.
+2. Hero: Heavy typography title '{HERO_TITLE}', sub-headline '{HERO_SUB}', and primary action button.
+3. Services: 3-column card layout displaying services.
+4. Contact Form: Input fields with bold borders and hover state transformations.</textarea>
         <div style="display: flex; gap: 12px; margin-top: auto;">
             <button onclick="copyPrompt('001')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
                 <i class="fa-solid fa-copy"></i> COPY
@@ -241,24 +251,25 @@ Provide clean, valid markup containing no external frameworks except FontAwesome
     
 
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#002</span>
-            <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#002</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
         </div>
         
         <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Self-Healing Multi-System Webhook Handler</h3>
         <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
-            You are a senior workflow integration engineer.
-Write a script or workflow structure for n8n or Make.com that implements a self-healing webhook r...
+            Act as a Lead Backend Developer. Build a Node.js Express webhook listener endpoint that acts as a fail-safe router syncing incoming lead payloads...
         </p>
         
-        <textarea id="prompt-text-002" style="display: none;">You are a senior workflow integration engineer.
-Write a script or workflow structure for n8n or Make.com that implements a self-healing webhook receiver:
-- Payload Ingestion: Receive custom lead parameters from a client contact form.
-- Sanitization: Validate email string and format phone numbers to standard E.164.
-- Integration: Sync leads data directly with HubSpot API and Salesforce REST API.
-- Error Handling: On any REST connection timeout, retry 3 times with exponential backoff (initial delay: 5s).
-- Alerting: If all retries fail, post structured error details to Slack alert webhook and cache payload in a local SQLite failover db.</textarea>
+        <textarea id="prompt-text-002" style="display: none;">Act as a Lead Backend Developer. Build a Node.js Express webhook listener endpoint that acts as a fail-safe router syncing incoming lead payloads to multiple targets: active database, HubSpot CRM, and Slack alerts channel.
+
+REQUIREMENTS:
+- Implement a retry circuit breaker using exponential backoff (max 5 retries).
+- If any target fails (e.g. CRM API is down), serialize the payload and push it to a local SQLite 'dead_letter_queue' table.
+- Schedule a secondary cron run every 15 minutes to scan the local SQLite queue, attempt re-transmission of queued payloads, and notify sysadmin via email if failure persists beyond 24 hours.</textarea>
         <div style="display: flex; gap: 12px; margin-top: auto;">
             <button onclick="copyPrompt('002')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
                 <i class="fa-solid fa-copy"></i> COPY
@@ -274,23 +285,28 @@ Write a script or workflow structure for n8n or Make.com that implements a self-
     
 
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#003</span>
-            <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#003</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
         </div>
         <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/003.jpg" alt="Multimodal Semantic Extraction System" style="width: 100%; height: 100%; object-fit: cover;"></div>
         <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Multimodal Semantic Extraction System</h3>
         <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
-            You are a lead AI research engineer working with multimodal LLMs.
-Design an instruction prompt for Gemini 1.5 Pro to extract structured metadata...
+            Act as a Senior AI Architect. Build a Python workflow using Gemini 1.5 Pro to extract semantic key-value details from unstructured documents.
+
+IN...
         </p>
         
-        <textarea id="prompt-text-003" style="display: none;">You are a lead AI research engineer working with multimodal LLMs.
-Design an instruction prompt for Gemini 1.5 Pro to extract structured metadata from raw invoice images:
-- Goal: Extract vendor name, tax ID, line-item table details, and total amount.
-- Output Format: Strictly output valid JSON adhering to a specified schema. Do not enclose the output in backticks or add markdown text.
-- Fallbacks: If tax ID is missing, set value to 'UNKNOWN_OR_NOT_PRESENT'.
-- Zero-Shot Examples: Include three distinct test case structures to guide semantic analysis.</textarea>
+        <textarea id="prompt-text-003" style="display: none;">Act as a Senior AI Architect. Build a Python workflow using Gemini 1.5 Pro to extract semantic key-value details from unstructured documents.
+
+INPUT: Accept PDF documents, scanned JPEGs, or text invoices.
+OUTPUT: Extract raw vendor name, registered tax ID, detailed line-items array, total tax, and invoice total. Output formatting must be strictly valid JSON.
+EXTRACTION PROTOCOL:
+- If a value (like tax ID) is missing, do not guess; output 'UNKNOWN'.
+- Run a validator check comparing line-item calculations to the total invoice amount before returning the JSON output. If they do not match, flag in a metadata block.</textarea>
         <div style="display: flex; gap: 12px; margin-top: auto;">
             <button onclick="copyPrompt('003')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
                 <i class="fa-solid fa-copy"></i> COPY
@@ -306,9 +322,12 @@ Design an instruction prompt for Gemini 1.5 Pro to extract structured metadata f
     
 
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#004</span>
-            <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#004</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
         </div>
         <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/004.jpg" alt="Neobrutalist Clone Generator Prompt (With Placeholders)" style="width: 100%; height: 100%; object-fit: cover;"></div>
         <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Neobrutalist Clone Generator Prompt (With Placeholders)</h3>
@@ -392,6 +411,534 @@ INSTRUCTIONS FOR USER:
         </div>
         <div style="text-align: center; margin-top: 20px;">
             <a href="prompts/004.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#005</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/005.jpg" alt="Autonomous RAG Knowledge Graph Pipeline Builder" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Autonomous RAG Knowledge Graph Pipeline Builder</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as a Graph Database & Semantic AI Specialist. Write a Python script using LangChain and Neo4j to ingest raw markdown directories and construc...
+        </p>
+        
+        <textarea id="prompt-text-005" style="display: none;">Act as a Graph Database & Semantic AI Specialist. Write a Python script using LangChain and Neo4j to ingest raw markdown directories and construct an entity-relationship Knowledge Graph.
+
+FLOW STEPS:
+1. Parse raw text files into chunks using semantic chunking configurations (keeping headers as node metadata).
+2. Query LLM to extract entities (Persons, Concepts, Technologies) and relationships (CONTRIBUTES_TO, INTEGRATES_WITH).
+3. Insert nodes and edges into Neo4j graph db, validating data format.
+4. Implement hybrid retrieval combining Graph Cypher queries with vector search embeddings (Cosine Similarity) for question answering.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('005')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('005', 'https://ryanshoyab.in/prompts/005.html', 'Autonomous RAG Knowledge Graph Pipeline Builder')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/005.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#006</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/006.jpg" alt="Vibrant Neobrutalist Digital Agency Template" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Vibrant Neobrutalist Digital Agency Template</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a premium, high-impact landing page design tailored for a modern Creative Agency. Use a loud, vibrant Neobrutalist design system.
+
+STYLING...
+        </p>
+        
+        <textarea id="prompt-text-006" style="display: none;">Build a premium, high-impact landing page design tailored for a modern Creative Agency. Use a loud, vibrant Neobrutalist design system.
+
+STYLING GUIDELINES:
+- Dark background accents: #121214 with thick contrasting margins.
+- Accent blocks: Bright Lime Green (#00FF66), Hot Cyan (#00E5FF), and Neon Purple (#9D4EDD).
+- Grid layout: Horizontal sections separated by thick 5px solid black rules.
+- Typography: Display titles styled with font-family 'Bebas Neue' at massive sizes (e.g. 5rem). Monospaced metadata details using 'Share Tech Mono'.
+- Interactive elements: Tilt cards that pop up by translating -8px on hover, casting dark offsets.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('006')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('006', 'https://ryanshoyab.in/prompts/006.html', 'Vibrant Neobrutalist Digital Agency Template')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/006.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#007</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/007.jpg" alt="Serverless Telemetry Sync Postgres to Redis Router" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Serverless Telemetry Sync Postgres to Redis Router</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Write a Node.js AWS Lambda serverless function triggered by a PostgreSQL database logical replication stream (via Supabase Webhooks or pg_recvlog...
+        </p>
+        
+        <textarea id="prompt-text-007" style="display: none;">Write a Node.js AWS Lambda serverless function triggered by a PostgreSQL database logical replication stream (via Supabase Webhooks or pg_recvlogical).
+
+FUNCTIONAL FLOW:
+1. Parse incoming write stream event (INSERT, UPDATE, DELETE) payloads.
+2. Sanitize and structure metrics into telemetry objects.
+3. Write clean key-value caches to Redis using EXPIRE rules (default 24 hours).
+4. Run telemetry validator checking write transaction confirmation and return JSON feedback.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('007')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('007', 'https://ryanshoyab.in/prompts/007.html', 'Serverless Telemetry Sync Postgres to Redis Router')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/007.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#008</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/008.jpg" alt="Agentic Coding Assistant Instruction Prompt System" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Agentic Coding Assistant Instruction Prompt System</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as a Prompt Engineer. Build a master System Instruction prompt for an autonomous AI coding assistant.
+
+GUIDING CONSTRAINTS:
+- Establish a sen...
+        </p>
+        
+        <textarea id="prompt-text-008" style="display: none;">Act as a Prompt Engineer. Build a master System Instruction prompt for an autonomous AI coding assistant.
+
+GUIDING CONSTRAINTS:
+- Establish a senior pair-programmer persona that focuses on clean, modular, tested, and self-documenting code formats.
+- Force assistant to outline architectural plans BEFORE writing code.
+- Prevent helper library imports unless explicitly approved by user query.
+- Format all source modifications as complete, drop-in replacements, using clear Git-style diff notation.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('008')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('008', 'https://ryanshoyab.in/prompts/008.html', 'Agentic Coding Assistant Instruction Prompt System')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/008.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#009</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/009.jpg" alt="SaaS Glassmorphism Dashboard Interface CSS Schema" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">SaaS Glassmorphism Dashboard Interface CSS Schema</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a responsive, modern admin dashboard styled with high-end glassmorphism and semi-transparent panels.
+
+CSS REQUIREMENTS:
+- Background: Dynam...
+        </p>
+        
+        <textarea id="prompt-text-009" style="display: none;">Build a responsive, modern admin dashboard styled with high-end glassmorphism and semi-transparent panels.
+
+CSS REQUIREMENTS:
+- Background: Dynamic smooth dark gradient (#1E1E2F to #0F0F1B).
+- Panel styling: backdrop-filter: blur(12px), background: rgba(255, 255, 255, 0.03), and border: 1px solid rgba(255, 255, 255, 0.1).
+- Card layouts: Grid container utilizing grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) for responsive metrics charts.
+- Interaction: Smooth hover scaling and neon glow box-shadow transition effect.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('009')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('009', 'https://ryanshoyab.in/prompts/009.html', 'SaaS Glassmorphism Dashboard Interface CSS Schema')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/009.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#010</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/010.jpg" alt="N8N Lead Processing & Routing Workflow Configuration" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">N8N Lead Processing & Routing Workflow Configuration</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as an Automation Architect. Design a detailed JSON workflow template schema for n8n that automates lead processing.
+
+NODE CONNECTIONS:
+1. Web...
+        </p>
+        
+        <textarea id="prompt-text-010" style="display: none;">Act as an Automation Architect. Design a detailed JSON workflow template schema for n8n that automates lead processing.
+
+NODE CONNECTIONS:
+1. Webhook Trigger: Captures incoming lead details.
+2. Filter Gate: Routes leads by company size.
+3. Enrichment Block: Queries Clearbit API for target data.
+4. Database Write: Inserts enriched leads into Postgres.
+5. Notification Sender: Pushes Slack alert block containing company size and clear CTA action buttons.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('010')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('010', 'https://ryanshoyab.in/prompts/010.html', 'N8N Lead Processing & Routing Workflow Configuration')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/010.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#011</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/011.jpg" alt="Semantic Embeddings Search Engine Vector Sync" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Semantic Embeddings Search Engine Vector Sync</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as a Machine Learning Developer. Write a Python script utilizing Pinecone vector database and OpenAI embeddings to construct a semantic searc...
+        </p>
+        
+        <textarea id="prompt-text-011" style="display: none;">Act as a Machine Learning Developer. Write a Python script utilizing Pinecone vector database and OpenAI embeddings to construct a semantic search system.
+
+PIPELINE:
+1. Load document strings and generate 1536-dimensional embeddings using text-embedding-ada-002.
+2. Upsert vector records into Pinecone namespace, appending metadata blocks (author, timestamp, context tags).
+3. Expose query API fetching top-k nearest neighbor matches with cosine similarity scores.
+4. Provide fallback checks handling API exceptions cleanly.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('011')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('011', 'https://ryanshoyab.in/prompts/011.html', 'Semantic Embeddings Search Engine Vector Sync')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/011.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#012</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        <div style="width: 100%; height: 180px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 16px; margin-bottom: 15px;"><img src="ASSETS/prompts/012.jpg" alt="High-Converting Minimalist Realtor Portfolio UI" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">High-Converting Minimalist Realtor Portfolio UI</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a responsive, high-converting portfolio website for a Luxury Real Estate Broker.
+
+THEME SPECS:
+- Palette: Soft Off-White (#FBFBFC), Muted C...
+        </p>
+        
+        <textarea id="prompt-text-012" style="display: none;">Build a responsive, high-converting portfolio website for a Luxury Real Estate Broker.
+
+THEME SPECS:
+- Palette: Soft Off-White (#FBFBFC), Muted Charcoal (#1C1D1F), and Warm Gold highlight (#D4AF37).
+- Gallery Grid: Display listings cards featuring full-bleed images, clean price tags, and hover reveal animation overlays.
+- Typography: Google Fonts 'Playfair Display' for luxury headings, and 'Inter' for descriptions and specifications.
+- Lead CTA: Dedicated sliding contact side-drawer component.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('012')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('012', 'https://ryanshoyab.in/prompts/012.html', 'High-Converting Minimalist Realtor Portfolio UI')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/012.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#013</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Database Failover Notification & Status Telemetry</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a Python daemon script monitoring database pool connections. If network connectivity drops or query latency exceeds 1200ms, trigger alert u...
+        </p>
+        
+        <textarea id="prompt-text-013" style="display: none;">Build a Python daemon script monitoring database pool connections. If network connectivity drops or query latency exceeds 1200ms, trigger alert updates to PagerDuty API and post system telemetry data to an admin dashboard status page. Maintain local cache of failures using SQLite.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('013')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('013', 'https://ryanshoyab.in/prompts/013.html', 'Database Failover Notification & Status Telemetry')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/013.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#014</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Fine-Tuning Dataset Synthesizer & Validator</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Write a Python automation system that reads documentation files and synthesizes dataset pairs (instruction, input, response) tailored for fine-tu...
+        </p>
+        
+        <textarea id="prompt-text-014" style="display: none;">Write a Python automation system that reads documentation files and synthesizes dataset pairs (instruction, input, response) tailored for fine-tuning LLMs. Programmatically parse and filter out any PII, validate JSON structure, and output standard HuggingFace dataset JSONL files.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('014')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('014', 'https://ryanshoyab.in/prompts/014.html', 'Fine-Tuning Dataset Synthesizer & Validator')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/014.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#015</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Retro Cyberpunk Portfolio Layout CSS Schema</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Design a single-file retro-futuristic Cyberpunk web layout. Use a solid black background, neon green (#39FF14) and neon pink (#FF007F) borders, m...
+        </p>
+        
+        <textarea id="prompt-text-015" style="display: none;">Design a single-file retro-futuristic Cyberpunk web layout. Use a solid black background, neon green (#39FF14) and neon pink (#FF007F) borders, monospaced font family 'Courier New', retro CRT scanline effects using CSS linear-gradients, and glitch text animations on titles.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('015')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('015', 'https://ryanshoyab.in/prompts/015.html', 'Retro Cyberpunk Portfolio Layout CSS Schema')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/015.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#016</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Stripe Billing Ingestion & Webhook Sync Engine</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a Node.js server endpoint handling Stripe checkout.session.completed webhooks. Verify Stripe signatures, parse user details, sync pricing m...
+        </p>
+        
+        <textarea id="prompt-text-016" style="display: none;">Build a Node.js server endpoint handling Stripe checkout.session.completed webhooks. Verify Stripe signatures, parse user details, sync pricing metadata blocks to the Postgres DB database, write active cache limits to Redis, and send HTML invoice receipts via Nodemailer.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('016')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('016', 'https://ryanshoyab.in/prompts/016.html', 'Stripe Billing Ingestion & Webhook Sync Engine')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/016.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#017</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Function-Calling LLM Tool Router Code Generator</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as a Software Architect. Write a Python application that uses LLM function-calling capabilities to route natural language requests to corresp...
+        </p>
+        
+        <textarea id="prompt-text-017" style="display: none;">Act as a Software Architect. Write a Python application that uses LLM function-calling capabilities to route natural language requests to corresponding Python helper tools (e.g. database query, web fetch, weather API) and parse results back to readable strings.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('017')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('017', 'https://ryanshoyab.in/prompts/017.html', 'Function-Calling LLM Tool Router Code Generator')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/017.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#018</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Web Design</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Sleek Monospaced Developer Portfolio Prompt</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Build a minimal monospaced portfolio theme for software engineers. Color base: #0D1117 (dark charcoal) and #58A6FF (light blue accent). Use monos...
+        </p>
+        
+        <textarea id="prompt-text-018" style="display: none;">Build a minimal monospaced portfolio theme for software engineers. Color base: #0D1117 (dark charcoal) and #58A6FF (light blue accent). Use monospaced font 'Fira Code' throughout. Include terminal-style project view boxes and interactive contact forms styled as CLI inputs.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('018')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('018', 'https://ryanshoyab.in/prompts/018.html', 'Sleek Monospaced Developer Portfolio Prompt')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/018.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#019</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">Automation</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">GitHub Actions Automated CI/CD Deploy Monitor</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Write a GitHub Action YAML workflow file configured to run on pushes to the production branch. Build dependencies, run test suites, deploy produc...
+        </p>
+        
+        <textarea id="prompt-text-019" style="display: none;">Write a GitHub Action YAML workflow file configured to run on pushes to the production branch. Build dependencies, run test suites, deploy production bundle to Vercel/AWS, and trigger Discord/Slack alerts reporting deploy latency, branch info, and logs link.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('019')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('019', 'https://ryanshoyab.in/prompts/019.html', 'GitHub Actions Automated CI/CD Deploy Monitor')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/019.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
+        </div>
+    </div>
+    
+
+    <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="background: var(--accent-yellow); border: 2px solid #0A0A0A; font-family: var(--font-playful-alt); font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border-radius: 8px;">#020</span>
+                <span style="background: var(--bg-pink); border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; text-transform: uppercase;">AI Systems</span>
+            </div>
+            <span style="background: #EAEAEA; border: 2px solid #0A0A0A; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; padding: 4px 12px; border-radius: 8px; color: #333;">By Ryan Shoyab</span>
+        </div>
+        
+        <h3 style="font-family: var(--font-playful-alt); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin: 15px 0; line-height: 1.3; text-transform: uppercase;">Semantic Guardrails & PII Masking Router Agent</h3>
+        <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
+            Act as an AI Security Specialist. Build a Python routing middleware that parses user inputs to LLM applications. Use regular expressions and sema...
+        </p>
+        
+        <textarea id="prompt-text-020" style="display: none;">Act as an AI Security Specialist. Build a Python routing middleware that parses user inputs to LLM applications. Use regular expressions and semantic embeddings to detect and mask sensitive information (SSN, credit cards, emails) before forwarding payloads to external APIs.</textarea>
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+            <button onclick="copyPrompt('020')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-copy"></i> COPY
+            </button>
+            <button onclick="sharePrompt('020', 'https://ryanshoyab.in/prompts/020.html', 'Semantic Guardrails & PII Masking Router Agent')" class="lab-link-btn" style="flex: 1; justify-content: center; background: #FFFFFF; color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <i class="fa-solid fa-share-nodes"></i> SHARE
+            </button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="prompts/020.html" style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 700; color: var(--accent-purple); text-decoration: underline; text-transform: uppercase;">View Full Prompt</a>
         </div>
     </div>
     
