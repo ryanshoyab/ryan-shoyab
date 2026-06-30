@@ -410,10 +410,12 @@ for p in prompts:
     
     og_head_tags = f"""
     <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Ryan Shoyab Prompts">
     <meta property="og:type" content="article">
     <meta property="og:title" content="#{p["id"]} - {p["title"]} | Ryan Shoyab Prompts">
     <meta property="og:description" content="Copy prompt '{p["title"]}' in one click. Developed by Ryan Shoyab Shaikh.">
     <meta property="og:image" content="{og_img}">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:url" content="https://ryanshoyab.in/prompts/{page_filename}">
     
     <!-- Twitter -->
