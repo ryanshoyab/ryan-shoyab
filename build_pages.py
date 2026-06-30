@@ -257,9 +257,9 @@ toast_html = """
         }
 
         function sharePrompt(id, url, title) {
-            const shareText = `Ryan Shoyab Shaikh | Prompt #${id} - "${title}": ${url}`;
+            const shareText = `Hey {Name}! Here is the "${title}" prompt. Click it, copy it, and enjoy!\\n\\nDon't forget to follow me on Instagram @ryan.shoyab. Thanks!\\n\\nLink: ${url}`;
             navigator.clipboard.writeText(shareText).then(() => {
-                showToast('Share link copied! 🔗');
+                showToast('Share message copied! 🔗');
             }).catch(err => {
                 showToast('Share link: ' + url);
             });
