@@ -446,10 +446,11 @@ for art in articles:
             </article>\n\n'''
     articles_html += art_str
 
-with open("cards_output.html", "w", encoding="utf-8") as f:
-    f.write(cards_html)
+if __name__ == '__main__':
+    with open("cards_output.html", "w", encoding="utf-8") as f:
+        f.write(cards_html)
 
-with open("articles_output.html", "w", encoding="utf-8") as f:
-    f.write(articles_html)
+    with open("articles_output.html", "w", encoding="utf-8") as f:
+        f.write(articles_html)
 
-print("Generated successfully!")
+    print("Generated successfully!")

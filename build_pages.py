@@ -291,7 +291,10 @@ for p in prompts:
     
     prompt_clean = p["prompt"].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
     excerpt = p["prompt"][:145].strip() + ("..." if len(p["prompt"]) > 145 else "")
-    
+    ref_img_btn = ""
+    if p["id"] == "004":
+        ref_img_btn = '<div style="margin-bottom: 15px;"><a href="ASSETS/prompts/neobrutalist-portfolio-ref.jpg" download style="display: block; width: 100%; text-align: center; background: var(--bg-pink); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 10px; font-size: 0.85rem; text-decoration: none; font-family: var(--font-body);"><i class="fa-solid fa-download"></i> DOWNLOAD REFERENCE IMAGE</a></div>'
+
     card_html = f"""
     <div class="resource-card-neobrutalist reveal-element" style="background: #FFFFFF; border: 3px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
@@ -303,6 +306,7 @@ for p in prompts:
         <p style="font-family: var(--font-body); font-size: 0.9rem; color: #555555; line-height: 1.5; margin-bottom: 25px; flex-grow: 1;">
             {excerpt}
         </p>
+        {ref_img_btn}
         <textarea id="prompt-text-{p["id"]}" style="display: none;">{prompt_clean}</textarea>
         <div style="display: flex; gap: 12px; margin-top: auto;">
             <button onclick="copyPrompt('{p["id"]}')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 3px 3px 0px #0A0A0A; border-radius: 12px; padding: 12px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
@@ -351,6 +355,10 @@ for p in prompts:
     if p.get("image"):
         img_display_tag = f'<div style="width: 100%; max-height: 400px; overflow: hidden; border: 3px solid #0A0A0A; border-radius: 20px; margin-bottom: 30px;"><img src="../{p["image"]}" alt="{p["title"]}" style="width: 100%; height: 100%; object-fit: cover;"></div>'
     
+    ref_img_download = ""
+    if p["id"] == "004":
+        ref_img_download = '<div style="margin-bottom: 25px;"><a href="../ASSETS/prompts/neobrutalist-portfolio-ref.jpg" download style="display: flex; justify-content: center; align-items: center; gap: 8px; width: 100%; text-align: center; background: var(--bg-pink); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 4px 4px 0px #0A0A0A; border-radius: 12px; padding: 15px; font-size: 0.95rem; text-decoration: none; font-family: var(--font-body);"><i class="fa-solid fa-download"></i> DOWNLOAD REFERENCE IMAGE (HIGH-RES)</a></div>'
+
     prompt_clean = p["prompt"].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
     
     prompt_body = f"""
@@ -372,6 +380,7 @@ for p in prompts:
                 <h1 style="font-family: var(--font-playful-alt); font-size: 2rem; font-weight: 700; line-height: 1.3; text-transform: uppercase; color: var(--text-dark); margin-bottom: 25px; border-bottom: 3px solid #0A0A0A; padding-bottom: 15px;">{p["title"]}</h1>
                 
                 {img_display_tag}
+                {ref_img_download}
                 
                 <div style="margin-bottom: 25px; display: flex; gap: 15px;">
                     <button onclick="copyPrompt('{p["id"]}')" class="lab-link-btn" style="flex: 1; justify-content: center; background: var(--accent-yellow); color: var(--text-dark); font-weight: 700; border: 2px solid #0A0A0A; box-shadow: 4px 4px 0px #0A0A0A; border-radius: 12px; padding: 15px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
